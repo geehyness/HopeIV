@@ -1,9 +1,9 @@
 import { writeClient } from './sanityClient';
-import { generateSalt, hashPassword } from '../../dash-kimmys/src/lib/passwordUtils';
+import { generateSalt, hashPassword } from '../../dash-hopeiv/src/lib/passwordUtils';
 
 async function createAdminUser() {
-  const username = 'kimmys.meals@gmail.com'; // Change this
-  const password = 'ToTheMeals!'; // Change this
+  const username = 'dashboard'; // Change this
+  const password = 'ViewTheMeals!'; // Change this
   
   const salt = generateSalt();
   const passwordHash = hashPassword(password, salt);

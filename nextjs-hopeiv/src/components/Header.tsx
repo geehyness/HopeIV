@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image'; // Import the Image component
 import { useState, useEffect, useRef } from 'react';
 import { useShoppingCart } from '@/context/ShoppingCartContext';
 import styles from './Header.module.css';
@@ -8,7 +9,7 @@ import styles from './Header.module.css';
 const NAV_ITEMS = [
   { path: '/', name: 'Home' },
   { path: '/menu', name: 'Menu' },
-  
+
   { path: '/about', name: 'About' },
   { path: '/contact', name: 'Contact' },
   { path: '/orders/search', name: 'Track Order' },
@@ -60,7 +61,15 @@ export default function Header() {
       <div className={styles.container}>
         <div className={styles.logo}>
           <Link href="/" onClick={closeAll}>
-            <span className={styles.logoMain}>HopeIV</span>
+            <div className={styles.logoCard}>
+              <Image
+                src="/images/logo.png" // Replace with the actual path to your logo
+                alt="HopeIV Logo"
+                width={130} // Adjust the width as needed to fit within the 80x80 card
+                height={130} // Adjust the height as needed
+                className={styles.logoImage} // Optional class for further image styling
+              />
+            </div>
           </Link>
         </div>
 

@@ -2,11 +2,11 @@
 import { createClient } from '@sanity/client';
 
 
-const NEXT_PUBLIC_SANITY_PROJECT_ID='lma2ysa6'
+const NEXT_PUBLIC_SANITY_PROJECT_ID='2vpucv9x'
 
 const NEXT_PUBLIC_SANITY_DATASET='production'
 
-const SANITY_API_WRITE_TOKEN='skBuELSHZpU5yW8EIvhiDohgEqiYzs8V1Yl0KelTbjV0FZZEh8bbiNyAwg1RFgU6V4PBW8QrLNJLT2NYhfj49gZ0z5vLywlYWBjiigVcfwRgwYzoNOhBIJAOOzljdQUA2LfLiKg7fwTgMlhdiPAe3xD1Hy6H31xx5rNTDblNtz7x18Ka738J'
+const SANITY_API_WRITE_TOKEN='skr052EAZeJKQje7zGevLgoXaRSTZ5i0p0arDGZfvFPbwuR6Jo65p4ZEqzlruwYF9vs1fTQECh0l5SAW8psbGaJEmKaBGFO1qZmg4dWLmitdSY01JRjogGGcdNPtXDVWOg2cmoZGuVMbxsRxKkRuIYsD7PVUwqtlnsJS93bCprSgJWth7KXe'
 
 
 export const writeClient = createClient({

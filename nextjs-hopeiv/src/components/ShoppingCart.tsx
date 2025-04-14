@@ -374,8 +374,8 @@ export default function ShoppingCart() {
                       onChange={handlePaymentMethodChange}
                     >
                       <option value="">Select Payment Method</option>
-                      <option value="eWallet">eWallet</option>
-                      <option value="MoMo">MoMo</option>
+                      {/*<option value="eWallet">eWallet</option>
+                      <option value="MoMo">MoMo</option>*/}
                       <option value="Cash on Collect">Cash on Collect</option>
                     </select>
                   </div>
