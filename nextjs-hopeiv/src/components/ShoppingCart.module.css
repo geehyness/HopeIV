@@ -2,6 +2,7 @@
 /* Cart Overlay */
 
 /* Add these new styles to your existing CSS */
+
 .extrasGrid {
   width: 100%;
   margin-top: 1rem;
@@ -26,6 +27,7 @@
   border-top: 1px solid var(--border-color);
   align-items: center;
   gap: 0.5rem;
+  background: #121212;
 }
 
 .extraName {
@@ -48,7 +50,7 @@
 
 .extraCheckbox.selected {
   background-color: var(--primary);
-  color: white;
+  color: #121212;
   border-color: var(--primary);
 }
 
@@ -74,9 +76,9 @@
   width: calc(100% - 2rem);
   max-width: 450px;
   height: calc(100vh - 2rem);
-  background: white;
+  background: #121212;
   z-index: 1000;
-  box-shadow: -2px 0 20px rgba(0, 0, 0, 0.15);
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 1);
   transform: translateX(120%);
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   overflow-y: auto;
@@ -164,8 +166,8 @@
 .continueShopping {
   padding: 0.75rem 1.5rem;
   background-color: var(--primary);
-  color: white;
-  border: none;
+  color: #fff;
+  border: 2px solid white;
   border-radius: var(--border-radius);
   cursor: pointer;
   font-weight: 500;
@@ -256,7 +258,7 @@
   width: 28px;
   height: 28px;
   border: 1px solid var(--border-color);
-  background: white;
+  background: #121212;
   border-radius: var(--border-radius);
   cursor: pointer;
   display: flex;
@@ -268,6 +270,7 @@
 
 .quantityControls button:hover {
   background-color: var(--bg-secondary);
+  
 }
 
 .quantityControls button:disabled {
@@ -341,6 +344,7 @@
 .checkoutButton {
   background-color: var(--primary);
   color: white;
+  background-color: red;
   border: none;
 }
 
@@ -384,7 +388,7 @@
   border-radius: var(--border-radius);
   font-size: 1rem;
   color: var(--text-primary);
-  background-color: white;
+  background-color: #121212;
 }
 
 .inputGroup select {
@@ -507,7 +511,7 @@
 
 .extraCheckbox.selected {
   background-color: var(--primary);
-  color: white;
+  color: #121212;
   border-color: var(--primary);
 }
 
@@ -536,7 +540,7 @@
 .extrasHeader {
   display: grid;
   grid-template-columns: 1fr repeat(auto-fit, minmax(30px, 1fr));
-  background: #f7f7f7;
+  background: #121212;
   padding: 0.5rem;
   font-weight: bold;
   border-bottom: 1px solid #ddd;
@@ -552,7 +556,7 @@
   grid-template-columns: 1fr repeat(auto-fit, minmax(30px, 1fr));
   padding: 0.5rem;
   align-items: center;
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid #121212;
 }
 
 .extraRow:last-child {
@@ -593,7 +597,7 @@
   border: 1px solid #eee;
   border-radius: 8px;
   overflow-x: auto; /* Allows horizontal scrolling on mobile */
-  background: #f9f9f9;
+  background: #121212;
 }
 
 .extrasHeader {
@@ -601,7 +605,7 @@
   grid-template-columns: 120px repeat(auto-fit, minmax(40px, 1fr));
   padding: 0.5rem;
   font-weight: bold;
-  background: #f0f0f0;
+  background: #121212;
   position: sticky;
   left: 0;
 }
@@ -699,7 +703,7 @@
   grid-template-columns: minmax(150px, 1fr) repeat(auto-fit, minmax(40px, 1fr));
   padding: 0.5rem;
   font-weight: bold;
-  background: #f0f0f0;
+  background: #121212;
   align-items: center;
 }
 
@@ -773,7 +777,6 @@
   .extraName {
     position: sticky;
     left: 0;
-    background: white;
     z-index: 1;
   }
 }

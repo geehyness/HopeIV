@@ -236,11 +236,11 @@ export default function ShoppingCart() {
                           onClick={() => updateQuantity(item._id, item.quantity - 1)}
                           disabled={item.quantity <= 1}
                         >
-                          −
+                          <p>-</p>
                         </button>
                         <span>{item.quantity}</span>
                         <button onClick={() => updateQuantity(item._id, item.quantity + 1)}>
-                          +
+                          <p>+</p>
                         </button>
                       </div>
 
